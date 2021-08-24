@@ -8,10 +8,10 @@ const coin = {
 
     toString: function () {
 
-        if(this.state === 1){
+        if (this.state === 1) {
             return 'Tails'
         }
-        if(this.state === 0){
+        if (this.state === 0) {
             return 'Heads'
         }
 
@@ -21,12 +21,12 @@ const coin = {
         const image = document.createElement("img")
 
         if (this.state === 1) {
-            image.src = './img/heads.png'
+            image.src = 'assets/heads.png'
             image.alt = 'Heads'
         }
 
         if (this.state === 0) {
-            image.src = './img/tails.png'
+            image.src = 'assets/tails.png'
             image.alt = 'tails'
         }
         return image
@@ -44,6 +44,7 @@ const display20Flips = () => {
 
     }
     document.body.innerText = JSON.stringify(results.join(', '))
+    console.log(results)
     return results
 }
 
@@ -58,5 +59,9 @@ const display20Images = () => {
         imageResult.appendChild(coin.toHTML())
     }
     document.body.appendChild(imageResult)
+    console.log(results)
     return results
 }
+
+display20Flips()
+display20Images()

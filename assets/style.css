@@ -1,5 +1,17 @@
-
-div img{
-    width: 70px;
+div img {
+    width: 144px;
     padding: 15px;
 }
+
+div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+body{
+    justify-content: center;
+    font-size: 2rem;
+    color: azure;
+    background-color: #2d3436;
+}
+
